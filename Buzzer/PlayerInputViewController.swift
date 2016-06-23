@@ -47,12 +47,19 @@ class PlayerInputViewController: UIViewController, UIGestureRecognizerDelegate, 
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        print("Cancelled")
+        selectedImageView = nil
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        print("Did finish picking image")
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            return
+        }
+        guard selectedImageView != nil else { return }
+        selectedImageView?.image = image
+        dismissViewControllerAnimated(true, completion: nil)
     }
+    
     
     @IBAction func playButtonPressed(sender: UIButton!) {
         performSegueWithIdentifier("ShowQuestionPickerSegue", sender: nil)
