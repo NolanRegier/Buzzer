@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0830F21CDACAD9002AB37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0830F11CDACAD9002AB37B /* AppDelegate.swift */; };
+		EF0830F41CDACAD9002AB37B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0830F31CDACAD9002AB37B /* MenuViewController.swift */; };
+		EF0830F71CDACAD9002AB37B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0830F51CDACAD9002AB37B /* Main.storyboard */; };
+		EF0830FA1CDACAD9002AB37B /* Buzzer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF0830F81CDACAD9002AB37B /* Buzzer.xcdatamodeld */; };
+		EF0830FC1CDACAD9002AB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0830FB1CDACAD9002AB37B /* Assets.xcassets */; };
+		EF0830FF1CDACAD9002AB37B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0830FD1CDACAD9002AB37B /* LaunchScreen.storyboard */; };
+		EF08310A1CDACAD9002AB37B /* BuzzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0831091CDACAD9002AB37B /* BuzzerTests.swift */; };
+		EF0831151CDACAD9002AB37B /* BuzzerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0831141CDACAD9002AB37B /* BuzzerUITests.swift */; };
+		EF0831281CDAE4E9002AB37B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0831271CDAE4E9002AB37B /* Game.swift */; };
+		EF08312A1CDAE512002AB37B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0831291CDAE512002AB37B /* Player.swift */; };
+		EF08312E1CDAE535002AB37B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08312D1CDAE535002AB37B /* Question.swift */; };
+		EF1F29A71D0F88C2003A7A64 /* HighScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F29A61D0F88C2003A7A64 /* HighScoreTableViewCell.swift */; };
+		EF1F29A91D0F9B86003A7A64 /* FinalResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F29A81D0F9B86003A7A64 /* FinalResultsViewController.swift */; };
+		EF4A1CB81CE1602500F293FA /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = EF4A1CB61CE1602500F293FA /* Category.json */; };
+		EF4A1CB91CE1602500F293FA /* Question.json in Resources */ = {isa = PBXBuildFile; fileRef = EF4A1CB71CE1602500F293FA /* Question.json */; };
+		EF4A1CBB1CE1606000F293FA /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1CBA1CE1606000F293FA /* Button.swift */; };
+		EF4A1CBF1CE1740F00F293FA /* PlayerInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1CBE1CE1740F00F293FA /* PlayerInputViewController.swift */; };
+		EF4A1CC11CE1781B00F293FA /* QuestionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1CC01CE1781B00F293FA /* QuestionPickerViewController.swift */; };
+		EF4A1CC31CE17DB200F293FA /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4A1CC21CE17DB200F293FA /* Image.swift */; };
+		EF66F5FC1CFD216100E024D9 /* AnswerInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66F5FB1CFD216100E024D9 /* AnswerInputViewController.swift */; };
+		EF6A75991CFB9346003FD005 /* QuestionBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6A75981CFB9346003FD005 /* QuestionBuzzViewController.swift */; };
+		EF6F4C4B1CE6935D0057F989 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6F4C4A1CE6935D0057F989 /* Category.swift */; };
+		EF6F4C531CE6B7EE0057F989 /* QuestionPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6F4C521CE6B7EE0057F989 /* QuestionPickerCell.swift */; };
+		EF7275E51D090BB300CE750C /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7275E41D090BB300CE750C /* HighScoresViewController.swift */; };
+		EFF97F281CFFC8F200B38D51 /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF97F261CFFC8F200B38D51 /* HighScore+CoreDataProperties.swift */; };
+		EFF97F291CFFC8F200B38D51 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF97F271CFFC8F200B38D51 /* HighScore.swift */; };
+		EFF97F2C1CFFD30800B38D51 /* AnswerVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF97F2B1CFFD30800B38D51 /* AnswerVerificationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF0831061CDACAD9002AB37B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0830E61CDACAD9002AB37B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0830ED1CDACAD9002AB37B;
+			remoteInfo = Buzzer;
+		};
+		EF0831111CDACAD9002AB37B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0830E61CDACAD9002AB37B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0830ED1CDACAD9002AB37B;
+			remoteInfo = Buzzer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF0830EE1CDACAD9002AB37B /* Buzzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buzzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0830F11CDACAD9002AB37B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF0830F31CDACAD9002AB37B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EF0830F61CDACAD9002AB37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF0830F91CDACAD9002AB37B /* Buzzer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Buzzer.xcdatamodel; sourceTree = "<group>"; };
+		EF0830FB1CDACAD9002AB37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF0830FE1CDACAD9002AB37B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF0831001CDACAD9002AB37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0831051CDACAD9002AB37B /* BuzzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0831091CDACAD9002AB37B /* BuzzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzerTests.swift; sourceTree = "<group>"; };
+		EF08310B1CDACAD9002AB37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0831101CDACAD9002AB37B /* BuzzerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0831141CDACAD9002AB37B /* BuzzerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzerUITests.swift; sourceTree = "<group>"; };
+		EF0831161CDACAD9002AB37B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0831271CDAE4E9002AB37B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EF0831291CDAE512002AB37B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EF08312D1CDAE535002AB37B /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EF1F29A61D0F88C2003A7A64 /* HighScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreTableViewCell.swift; sourceTree = "<group>"; };
+		EF1F29A81D0F9B86003A7A64 /* FinalResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalResultsViewController.swift; sourceTree = "<group>"; };
+		EF4A1CB61CE1602500F293FA /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
+		EF4A1CB71CE1602500F293FA /* Question.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Question.json; sourceTree = "<group>"; };
+		EF4A1CBA1CE1606000F293FA /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		EF4A1CBE1CE1740F00F293FA /* PlayerInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInputViewController.swift; sourceTree = "<group>"; };
+		EF4A1CC01CE1781B00F293FA /* QuestionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPickerViewController.swift; sourceTree = "<group>"; };
+		EF4A1CC21CE17DB200F293FA /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		EF66F5FB1CFD216100E024D9 /* AnswerInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerInputViewController.swift; sourceTree = "<group>"; };
+		EF6A75981CFB9346003FD005 /* QuestionBuzzViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionBuzzViewController.swift; sourceTree = "<group>"; };
+		EF6F4C4A1CE6935D0057F989 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EF6F4C521CE6B7EE0057F989 /* QuestionPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionPickerCell.swift; sourceTree = "<group>"; };
+		EF7275E41D090BB300CE750C /* HighScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
+		EFF97F261CFFC8F200B38D51 /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EFF97F271CFFC8F200B38D51 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
+		EFF97F2B1CFFD30800B38D51 /* AnswerVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerVerificationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF0830EB1CDACAD9002AB37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0831021CDACAD9002AB37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF08310D1CDACAD9002AB37B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF0830E51CDACAD9002AB37B = {
+			isa = PBXGroup;
+			children = (
+				EF0830F01CDACAD9002AB37B /* Buzzer */,
+				EF0831081CDACAD9002AB37B /* BuzzerTests */,
+				EF0831131CDACAD9002AB37B /* BuzzerUITests */,
+				EF0830EF1CDACAD9002AB37B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF0830EF1CDACAD9002AB37B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF0830EE1CDACAD9002AB37B /* Buzzer.app */,
+				EF0831051CDACAD9002AB37B /* BuzzerTests.xctest */,
+				EF0831101CDACAD9002AB37B /* BuzzerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF0830F01CDACAD9002AB37B /* Buzzer */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A1CB51CE15FD900F293FA /* Extensions */,
+				EF0831221CDAE405002AB37B /* Model */,
+				EF0831231CDAE40C002AB37B /* View */,
+				EF0831241CDAE413002AB37B /* Controller */,
+				EF0830F11CDACAD9002AB37B /* AppDelegate.swift */,
+				EF0830FB1CDACAD9002AB37B /* Assets.xcassets */,
+				EF0831001CDACAD9002AB37B /* Info.plist */,
+				EF0830F81CDACAD9002AB37B /* Buzzer.xcdatamodeld */,
+			);
+			path = Buzzer;
+			sourceTree = "<group>";
+		};
+		EF0831081CDACAD9002AB37B /* BuzzerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0831091CDACAD9002AB37B /* BuzzerTests.swift */,
+				EF08310B1CDACAD9002AB37B /* Info.plist */,
+			);
+			path = BuzzerTests;
+			sourceTree = "<group>";
+		};
+		EF0831131CDACAD9002AB37B /* BuzzerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0831141CDACAD9002AB37B /* BuzzerUITests.swift */,
+				EF0831161CDACAD9002AB37B /* Info.plist */,
+			);
+			path = BuzzerUITests;
+			sourceTree = "<group>";
+		};
+		EF0831221CDAE405002AB37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFF97F2A1CFFC91900B38D51 /* CoreData */,
+				EF0831271CDAE4E9002AB37B /* Game.swift */,
+				EF0831291CDAE512002AB37B /* Player.swift */,
+				EF08312D1CDAE535002AB37B /* Question.swift */,
+				EF6F4C4A1CE6935D0057F989 /* Category.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EF0831231CDAE40C002AB37B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF0830F51CDACAD9002AB37B /* Main.storyboard */,
+				EF0830FD1CDACAD9002AB37B /* LaunchScreen.storyboard */,
+				EF4A1CBA1CE1606000F293FA /* Button.swift */,
+				EF4A1CC21CE17DB200F293FA /* Image.swift */,
+				EF6F4C521CE6B7EE0057F989 /* QuestionPickerCell.swift */,
+				EF1F29A61D0F88C2003A7A64 /* HighScoreTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EF0831241CDAE413002AB37B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF0830F31CDACAD9002AB37B /* MenuViewController.swift */,
+				EF4A1CBE1CE1740F00F293FA /* PlayerInputViewController.swift */,
+				EF4A1CC01CE1781B00F293FA /* QuestionPickerViewController.swift */,
+				EF6A75981CFB9346003FD005 /* QuestionBuzzViewController.swift */,
+				EF66F5FB1CFD216100E024D9 /* AnswerInputViewController.swift */,
+				EFF97F2B1CFFD30800B38D51 /* AnswerVerificationViewController.swift */,
+				EF7275E41D090BB300CE750C /* HighScoresViewController.swift */,
+				EF1F29A81D0F9B86003A7A64 /* FinalResultsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EF4A1CB51CE15FD900F293FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF4A1CB61CE1602500F293FA /* Category.json */,
+				EF4A1CB71CE1602500F293FA /* Question.json */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EFF97F2A1CFFC91900B38D51 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EFF97F261CFFC8F200B38D51 /* HighScore+CoreDataProperties.swift */,
+				EFF97F271CFFC8F200B38D51 /* HighScore.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF0830ED1CDACAD9002AB37B /* Buzzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF0831191CDACAD9002AB37B /* Build configuration list for PBXNativeTarget "Buzzer" */;
+			buildPhases = (
+				EF0830EA1CDACAD9002AB37B /* Sources */,
+				EF0830EB1CDACAD9002AB37B /* Frameworks */,
+				EF0830EC1CDACAD9002AB37B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Buzzer;
+			productName = Buzzer;
+			productReference = EF0830EE1CDACAD9002AB37B /* Buzzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF0831041CDACAD9002AB37B /* BuzzerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF08311C1CDACAD9002AB37B /* Build configuration list for PBXNativeTarget "BuzzerTests" */;
+			buildPhases = (
+				EF0831011CDACAD9002AB37B /* Sources */,
+				EF0831021CDACAD9002AB37B /* Frameworks */,
+				EF0831031CDACAD9002AB37B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF0831071CDACAD9002AB37B /* PBXTargetDependency */,
+			);
+			name = BuzzerTests;
+			productName = BuzzerTests;
+			productReference = EF0831051CDACAD9002AB37B /* BuzzerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF08310F1CDACAD9002AB37B /* BuzzerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF08311F1CDACAD9002AB37B /* Build configuration list for PBXNativeTarget "BuzzerUITests" */;
+			buildPhases = (
+				EF08310C1CDACAD9002AB37B /* Sources */,
+				EF08310D1CDACAD9002AB37B /* Frameworks */,
+				EF08310E1CDACAD9002AB37B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF0831121CDACAD9002AB37B /* PBXTargetDependency */,
+			);
+			name = BuzzerUITests;
+			productName = BuzzerUITests;
+			productReference = EF0831101CDACAD9002AB37B /* BuzzerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF0830E61CDACAD9002AB37B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nolan Regier";
+				TargetAttributes = {
+					EF0830ED1CDACAD9002AB37B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3R324LZ9R8;
+					};
+					EF0831041CDACAD9002AB37B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EF0830ED1CDACAD9002AB37B;
+					};
+					EF08310F1CDACAD9002AB37B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EF0830ED1CDACAD9002AB37B;
+					};
+				};
+			};
+			buildConfigurationList = EF0830E91CDACAD9002AB37B /* Build configuration list for PBXProject "Buzzer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF0830E51CDACAD9002AB37B;
+			productRefGroup = EF0830EF1CDACAD9002AB37B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF0830ED1CDACAD9002AB37B /* Buzzer */,
+				EF0831041CDACAD9002AB37B /* BuzzerTests */,
+				EF08310F1CDACAD9002AB37B /* BuzzerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF0830EC1CDACAD9002AB37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0830FF1CDACAD9002AB37B /* LaunchScreen.storyboard in Resources */,
+				EF4A1CB91CE1602500F293FA /* Question.json in Resources */,
+				EF0830FC1CDACAD9002AB37B /* Assets.xcassets in Resources */,
+				EF0830F71CDACAD9002AB37B /* Main.storyboard in Resources */,
+				EF4A1CB81CE1602500F293FA /* Category.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0831031CDACAD9002AB37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF08310E1CDACAD9002AB37B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF0830EA1CDACAD9002AB37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0830FA1CDACAD9002AB37B /* Buzzer.xcdatamodeld in Sources */,
+				EF1F29A71D0F88C2003A7A64 /* HighScoreTableViewCell.swift in Sources */,
+				EF6F4C531CE6B7EE0057F989 /* QuestionPickerCell.swift in Sources */,
+				EF0830F41CDACAD9002AB37B /* MenuViewController.swift in Sources */,
+				EFF97F2C1CFFD30800B38D51 /* AnswerVerificationViewController.swift in Sources */,
+				EF4A1CBF1CE1740F00F293FA /* PlayerInputViewController.swift in Sources */,
+				EF0830F21CDACAD9002AB37B /* AppDelegate.swift in Sources */,
+				EF4A1CC11CE1781B00F293FA /* QuestionPickerViewController.swift in Sources */,
+				EF1F29A91D0F9B86003A7A64 /* FinalResultsViewController.swift in Sources */,
+				EF7275E51D090BB300CE750C /* HighScoresViewController.swift in Sources */,
+				EFF97F291CFFC8F200B38D51 /* HighScore.swift in Sources */,
+				EF4A1CBB1CE1606000F293FA /* Button.swift in Sources */,
+				EF08312E1CDAE535002AB37B /* Question.swift in Sources */,
+				EF08312A1CDAE512002AB37B /* Player.swift in Sources */,
+				EF6A75991CFB9346003FD005 /* QuestionBuzzViewController.swift in Sources */,
+				EF4A1CC31CE17DB200F293FA /* Image.swift in Sources */,
+				EF66F5FC1CFD216100E024D9 /* AnswerInputViewController.swift in Sources */,
+				EF0831281CDAE4E9002AB37B /* Game.swift in Sources */,
+				EF6F4C4B1CE6935D0057F989 /* Category.swift in Sources */,
+				EFF97F281CFFC8F200B38D51 /* HighScore+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0831011CDACAD9002AB37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF08310A1CDACAD9002AB37B /* BuzzerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF08310C1CDACAD9002AB37B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0831151CDACAD9002AB37B /* BuzzerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF0831071CDACAD9002AB37B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0830ED1CDACAD9002AB37B /* Buzzer */;
+			targetProxy = EF0831061CDACAD9002AB37B /* PBXContainerItemProxy */;
+		};
+		EF0831121CDACAD9002AB37B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0830ED1CDACAD9002AB37B /* Buzzer */;
+			targetProxy = EF0831111CDACAD9002AB37B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF0830F51CDACAD9002AB37B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0830F61CDACAD9002AB37B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF0830FD1CDACAD9002AB37B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0830FE1CDACAD9002AB37B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF0831171CDACAD9002AB37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF0831181CDACAD9002AB37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF08311A1CDACAD9002AB37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Buzzer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Learning.Buzzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF08311B1CDACAD9002AB37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Buzzer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Learning.Buzzer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF08311D1CDACAD9002AB37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Learning.BuzzerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buzzer.app/Buzzer";
+			};
+			name = Debug;
+		};
+		EF08311E1CDACAD9002AB37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Learning.BuzzerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Buzzer.app/Buzzer";
+			};
+			name = Release;
+		};
+		EF0831201CDACAD9002AB37B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuzzerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Learning.BuzzerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Buzzer;
+			};
+			name = Debug;
+		};
+		EF0831211CDACAD9002AB37B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuzzerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Learning.BuzzerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Buzzer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF0830E91CDACAD9002AB37B /* Build configuration list for PBXProject "Buzzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0831171CDACAD9002AB37B /* Debug */,
+				EF0831181CDACAD9002AB37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF0831191CDACAD9002AB37B /* Build configuration list for PBXNativeTarget "Buzzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF08311A1CDACAD9002AB37B /* Debug */,
+				EF08311B1CDACAD9002AB37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF08311C1CDACAD9002AB37B /* Build configuration list for PBXNativeTarget "BuzzerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF08311D1CDACAD9002AB37B /* Debug */,
+				EF08311E1CDACAD9002AB37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF08311F1CDACAD9002AB37B /* Build configuration list for PBXNativeTarget "BuzzerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0831201CDACAD9002AB37B /* Debug */,
+				EF0831211CDACAD9002AB37B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF0830F81CDACAD9002AB37B /* Buzzer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF0830F91CDACAD9002AB37B /* Buzzer.xcdatamodel */,
+			);
+			currentVersion = EF0830F91CDACAD9002AB37B /* Buzzer.xcdatamodel */;
+			path = Buzzer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF0830E61CDACAD9002AB37B /* Project object */;
+}
